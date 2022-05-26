@@ -18,14 +18,15 @@ body {
         align-items: center;
 
         nav {
-            
+            width: 100%;
+
             a.logo {
                 display: flex;
                 justify-content: center;
                 padding: 15px;
                 box-shadow: 0px 0px 5px 3px rgb(206, 206, 206);
                 img {
-                    width: 50%;
+                    height: 40px;
                 }
     
             }
@@ -124,6 +125,11 @@ body {
             background-color: rgb(247, 247, 247);
             margin-top: 20px;
 
+            h2 {
+                width: 100%;
+                padding-left: 10px;
+            }
+
             div.card {
                 width: 80%;
                 background-color: white;
@@ -141,7 +147,11 @@ body {
 
                 div.container {
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: space-between;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
 
                     div.card-text {
                         display: flex;
@@ -166,9 +176,10 @@ body {
         background-color: rgb(49, 49, 49);
         padding: 20px;
 
-        img {
-            width: 25%;
-            padding-bottom: 10px;
+        .footer-title{
+            font-family: 'Shrikhand', cursive;
+            margin: 0;
+            color: #e7e7e7;;
         }
 
         section {
@@ -178,6 +189,10 @@ body {
             a {
                 color: #f2f2f2;
                 text-decoration: none;
+
+                i {
+                    margin-right: 10px;
+                }
             }
         }
     }
