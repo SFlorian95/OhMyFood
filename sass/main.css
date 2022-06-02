@@ -1,6 +1,67 @@
+/*****Homepage*****/
+/*****Homepage*****/
+@media screen and (max-width: 768px) {
+  .nav-pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-pages a.return {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 40px;
+  }
+  .nav-pages a.return i {
+    font-size: 30px;
+  }
+  a.logo-pages {
+    padding: 15px;
+  }
+  a.logo-pages img {
+    height: 40px;
+  }
+  section.pages-container div.background-img {
+    width: 100%;
+  }
+  section.pages-container div.background-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  section.pages-container div.menu {
+    background: #f1f1f1;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-top: -32px;
+    position: relative;
+  }
+  section.pages-container div.menu div.menu-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 10px;
+  }
+  section.pages-container div.menu div.menu-title h2 {
+    margin-top: unset;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -20,6 +81,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  header nav {
+    width: 100%;
+  }
   header nav a.logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -32,7 +96,7 @@ body {
             box-shadow: 0px 0px 5px 3px #cecece;
   }
   header nav a.logo img {
-    width: 50%;
+    height: 40px;
   }
   header div.gps {
     background-color: #efefef;
@@ -45,6 +109,191 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     z-index: -1;
+  }
+  header div.gps i {
+    margin-right: 10px;
+  }
+  main section.homepage {
+    background-color: #f7f7f7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  main section.homepage button {
+    margin-top: 20px;
+    border-radius: 20px;
+    border: solid;
+    color: white;
+    padding: 10px;
+    background-color: violet;
+    border-color: violet;
+    -webkit-box-shadow: 0px 5px 5px 0px #cccaca;
+            box-shadow: 0px 5px 5px 0px #cccaca;
+  }
+  main section.tuto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  main section.tuto h2 {
+    padding-left: 10px;
+  }
+  main section.tuto div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 5%;
+  }
+  main section.tuto div span.number {
+    background: #bc4bff;
+    border-radius: 20px;
+    padding-top: 2px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    font-size: 13px;
+    color: white;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    z-index: 1;
+    margin-right: -10px;
+  }
+  main section.tuto div span.tuto-text {
+    display: block;
+    width: 80%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 5px 5px 0px #cccaca;
+            box-shadow: 0px 5px 5px 0px #cccaca;
+  }
+  main section.tuto div span.tuto-text i {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: gray;
+  }
+  main section.restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f7f7f7;
+    margin-top: 20px;
+  }
+  main section.restaurant h2 {
+    width: 100%;
+    padding-left: 10px;
+  }
+  main section.restaurant div.card {
+    width: 80%;
+    background-color: white;
+    border-radius: 16px;
+    margin-bottom: 5%;
+    -webkit-box-shadow: 0px 5px 5px 0px #cccaca;
+            box-shadow: 0px 5px 5px 0px #cccaca;
+  }
+  main section.restaurant div.card a {
+    text-decoration: none;
+    color: black;
+  }
+  main section.restaurant div.card img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    max-height: 200px;
+  }
+  main section.restaurant div.card div.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  main section.restaurant div.card div.container div.card-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.restaurant div.card div.container div.card-text span.card-title {
+    font-weight: bold;
+  }
+  main section.restaurant div.card div.container div.like {
+    font-size: 20px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #313131;
+    padding: 20px;
+  }
+  footer .footer-title {
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+    color: #f2f2f2;
+  }
+  footer section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer section a {
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+  footer section a i {
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
