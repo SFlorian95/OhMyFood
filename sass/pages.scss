@@ -1,0 +1,119 @@
+@import './variables.scss';
+@import "./common.scss";
+
+
+@media screen and (max-width: 768px) {
+    .nav-pages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a.return {
+            text-decoration: none;
+            color: black;
+            position: absolute;
+            left: 40px;
+            
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+
+    a.logo-pages {
+        padding: 15px;
+
+        img {
+            height: 40px;
+        }
+    }
+
+    section.pages-container {
+
+        div.background-img {
+            width: 100%;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                max-height: 300px;
+            }
+        }
+
+        div.menu {
+            background: rgb(241, 241, 241);
+            border-top-right-radius: 35px;
+            border-top-left-radius: 35px;
+            margin-top: -32px;
+            position: relative;
+            padding-top: 20px;
+
+            div.menu-title {
+                display: flex;
+                justify-content: space-around;
+                align-items: baseline;
+                padding: 10px;
+
+                h2 {
+                    margin-top: unset;
+                    font-family: 'Shrikhand', cursive;
+                    font-size: 28px;
+                    font-weight: 100;
+                }
+            }
+
+            div.menu-items {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h3 {
+                    width: 100%;
+                    padding-left: 10px;
+                    font-weight: lighter;
+                    text-transform: uppercase;
+                }
+
+                div.menu-container {
+                    background-color: white;
+                    border-radius: 20px;
+                    width: 98%;
+                    padding: 20px;
+                    margin-bottom: 15px;
+                    @include boxShadow;
+
+                    span.menu-subtitle {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+                    div {
+                        display: flex;
+                        justify-content: space-between;
+
+                        span.price {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            div.btn-command {
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+
+                button {
+                    margin-top: 20px;
+                    border-radius: 20px;
+                    border: solid;
+                    color: white;
+                    padding: 10px;
+                    background-color: $secondary;
+                    border-color: $secondary;
+                    @include boxShadow;
+                }
+            }
+        }
+    }
+}
