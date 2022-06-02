@@ -199,14 +199,14 @@ footer section a i {
     left: 40px;
   }
   .nav-pages a.return i {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   a.logo-pages {
     padding: 15px;
   }
   a.logo-pages img {
-    height: 40px;
+    width: 180px;
   }
 
   section.pages-container div.background-img {
@@ -313,6 +313,42 @@ footer section a i {
 
 body {
   margin: 0;
+}
+
+div.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333333;
+  z-index: 2;
+  transition: opacity 1s, visibility 5s;
+}
+div.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  animation: loading 0.5s linear infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+div.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
