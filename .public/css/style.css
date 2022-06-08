@@ -326,7 +326,7 @@ div.loader {
   align-items: center;
   background: #333333;
   z-index: 2;
-  transition: opacity 1s, visibility 5s;
+  transition: opacity 1s, visibility 5s ease-in-out;
 }
 div.loader::after {
   content: "";
