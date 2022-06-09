@@ -326,7 +326,8 @@ div.loader {
   align-items: center;
   background: #333333;
   z-index: 2;
-  transition: opacity 1s, visibility 5s ease-in-out;
+  transition: opacity 1s, visibility 5s;
+  animation: loading-bg 1s 3s forwards;
 }
 div.loader::after {
   content: "";
@@ -345,10 +346,14 @@ div.loader::after {
     transform: rotate(1turn);
   }
 }
-
-div.loader-hidden {
-  opacity: 0;
-  visibility: hidden;
+@keyframes loading-bg {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
