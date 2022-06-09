@@ -13,3 +13,43 @@ body {
     margin: 0;
 }
 
+div.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    z-index: 2;
+    transition: opacity 1s, visibility 5s;
+    animation: loading-bg 1s 3s forwards;
+
+    &::after {
+        content: "";
+        width: 75px;
+        height: 75px;
+        border: 15px solid #dddddd;
+        border-top-color: $primary;
+        border-radius: 50%;
+        animation: loading 0.5s linear infinite;
+    }
+
+    @keyframes loading {
+        from { transform: rotate(0turn) }
+        to { transform: rotate(1turn) }
+    }
+
+    @keyframes loading-bg {
+        from {
+          opacity: 1;
+        }
+
+        to {
+          opacity: 0;
+          transform: scale(0);
+        }
+      }
+}
