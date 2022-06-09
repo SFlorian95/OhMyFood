@@ -60,12 +60,25 @@
                     font-size: 28px;
                     font-weight: 100;
                 }
+
             }
 
             div.menu-items {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                opacity: 0;
+                animation: progressiv 1000ms 0.7s forwards;
+
+                @keyframes progressiv {
+                    from {
+                      opacity: 0;
+                    }
+            
+                    to {
+                      opacity: 1;
+                    }
+                  }
 
                 h3 {
                     width: 100%;
@@ -104,13 +117,7 @@
                 padding: 20px;
 
                 button {
-                    margin-top: 20px;
-                    border-radius: 20px;
-                    border: solid;
-                    color: white;
-                    padding: 10px;
-                    background-color: $secondary;
-                    border-color: $secondary;
+                    @include btnGradient;
                     @include boxShadow;
                 }
             }

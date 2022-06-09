@@ -50,13 +50,7 @@
             padding: 20px;
 
             button {
-                margin-top: 20px;
-                border-radius: 20px;
-                border: solid;
-                color: white;
-                padding: 10px;
-                background-color: $secondary;
-                border-color: $secondary;
+                @include btnGradient;
                 @include boxShadow;
             }
         }
@@ -100,10 +94,18 @@
                     font-weight: bold;
                     @include boxShadow;
 
+                    &:hover {
+                        background: lighten($color: rgb(188, 199, 255), $amount: 10%);
+                         i {
+                             color: $primary;
+                        }
+                    }
+
                     i {
                         margin-left: 20px;
                         margin-right: 20px;
                         color: gray;
+                        
                     }
                 }
             }
