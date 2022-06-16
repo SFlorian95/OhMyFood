@@ -1,0 +1,70 @@
+@mixin pinkButton {
+    background: linear-gradient(to bottom right, $secondary, $primary);
+    border-radius: 25px;
+    padding: 17px;
+    border: 0px;
+    color: white;
+    font-size: 110%;
+    font-weight: 500;
+    transition: opacity 200ms;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 8px 8px 17px rgba(0,0,0,.3);
+        opacity: 0.8;
+    }
+}
+
+@mixin functioningItem {
+    cursor: pointer;
+
+    &:hover{
+        i {
+            color: $primary;
+        }
+        background-color: $primaryLight;
+    }
+}
+
+.fa-heart {
+    &:hover {
+        transition: color 0.7s;
+        font-weight: bold;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(to bottom right, $secondary, $primary);
+    }
+}
+
+.sticker {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    padding: 10px;
+    font-weight: 600;
+    background-color: $grenLight;
+    color: $grenHarder;
+    border-radius: 2px;
+}
+
+@mixin cascade-delay{
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+            animation-delay: 500ms * $i;
+        }
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}

@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./common.scss";
+@import "./animation.scss";
 
 @media screen and (max-width: 768px) {
 
@@ -51,12 +52,7 @@
 
             button {
                 margin-top: 20px;
-                border-radius: 20px;
-                border: solid;
-                color: white;
-                padding: 10px;
-                background-color: $secondary;
-                border-color: $secondary;
+                @include pinkButton;
                 @include boxShadow;
             }
         }
@@ -99,6 +95,8 @@
                     border-radius: 15px;
                     font-weight: bold;
                     @include boxShadow;
+                    @include functioningItem;
+
 
                     i {
                         margin-left: 20px;
@@ -127,6 +125,7 @@
                 border-radius: 16px;
                 margin-bottom: 5%;
                 @include boxShadow;
+                position: relative;
 
                 a {
                     text-decoration: none;
