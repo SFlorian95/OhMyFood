@@ -2,6 +2,15 @@
     box-shadow: 0px 5px 5px 0px #cccaca;
 }
 
+@mixin btnGradient {
+    background: linear-gradient($primary, $secondary);
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
