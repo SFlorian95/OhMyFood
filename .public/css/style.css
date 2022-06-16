@@ -23,6 +23,36 @@ footer section a i {
   margin-right: 10px;
 }
 
+.fa-heart:hover {
+  transition: color 0.7s;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+.sticker {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  padding: 10px;
+  font-weight: 600;
+  background-color: #99E2D0;
+  color: #2C9C81;
+  border-radius: 2px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @media screen and (max-width: 768px) {
   header {
     display: flex;
@@ -64,13 +94,20 @@ footer section a i {
   }
   main section.homepage button {
     margin-top: 20px;
-    border-radius: 20px;
-    border: solid;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-radius: 25px;
+    padding: 17px;
+    border: 0px;
     color: white;
-    padding: 10px;
-    background-color: #FF79DA;
-    border-color: #FF79DA;
+    font-size: 110%;
+    font-weight: 500;
+    transition: opacity 200ms;
     box-shadow: 0px 5px 5px 0px #cccaca;
+  }
+  main section.homepage button:hover {
+    cursor: pointer;
+    box-shadow: 8px 8px 17px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
   }
   main section.tuto {
     display: flex;
@@ -108,6 +145,13 @@ footer section a i {
     border-radius: 15px;
     font-weight: bold;
     box-shadow: 0px 5px 5px 0px #cccaca;
+    cursor: pointer;
+  }
+  main section.tuto div span.tuto-text:hover {
+    background-color: #ece1f9;
+  }
+  main section.tuto div span.tuto-text:hover i {
+    color: #9356DC;
   }
   main section.tuto div span.tuto-text i {
     margin-left: 20px;
@@ -131,6 +175,7 @@ footer section a i {
     border-radius: 16px;
     margin-bottom: 5%;
     box-shadow: 0px 5px 5px 0px #cccaca;
+    position: relative;
   }
   main section.restaurant div.card a {
     text-decoration: none;
@@ -186,6 +231,36 @@ footer section a i {
   margin-right: 10px;
 }
 
+.fa-heart:hover {
+  transition: color 0.7s;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+.sticker {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  padding: 10px;
+  font-weight: 600;
+  background-color: #99E2D0;
+  color: #2C9C81;
+  border-radius: 2px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @media screen and (max-width: 768px) {
   .nav-pages {
     display: flex;
@@ -237,10 +312,26 @@ footer section a i {
     font-size: 28px;
     font-weight: 100;
   }
+  section.pages-container div.menu div.menu-title div {
+    font-size: 24px;
+  }
   section.pages-container div.menu div.menu-items {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 0.5s both;
+  }
+  section.pages-container div.menu div.menu-items:nth-child(1) {
+    animation-delay: 500ms;
+  }
+  section.pages-container div.menu div.menu-items:nth-child(2) {
+    animation-delay: 1000ms;
+  }
+  section.pages-container div.menu div.menu-items:nth-child(3) {
+    animation-delay: 1500ms;
+  }
+  section.pages-container div.menu div.menu-items:nth-child(4) {
+    animation-delay: 2000ms;
   }
   section.pages-container div.menu div.menu-items h3 {
     width: 100%;
@@ -274,13 +365,20 @@ footer section a i {
   }
   section.pages-container div.menu div.btn-command button {
     margin-top: 20px;
-    border-radius: 20px;
-    border: solid;
-    color: white;
-    padding: 10px;
-    background-color: #FF79DA;
-    border-color: #FF79DA;
     box-shadow: 0px 5px 5px 0px #cccaca;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-radius: 25px;
+    padding: 17px;
+    border: 0px;
+    color: white;
+    font-size: 110%;
+    font-weight: 500;
+    transition: opacity 200ms;
+  }
+  section.pages-container div.menu div.btn-command button:hover {
+    cursor: pointer;
+    box-shadow: 8px 8px 17px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
   }
 }
 footer {
@@ -306,6 +404,36 @@ footer section a i {
   margin-right: 10px;
 }
 
+.fa-heart:hover {
+  transition: color 0.7s;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+.sticker {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  padding: 10px;
+  font-weight: 600;
+  background-color: #99E2D0;
+  color: #2C9C81;
+  border-radius: 2px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
