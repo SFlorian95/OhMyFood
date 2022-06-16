@@ -326,6 +326,7 @@ footer section a i {
     padding-left: 10px;
   }
   main section.restaurant div.card {
+    position: relative;
     width: 45%;
     background-color: white;
     border-radius: 16px;
