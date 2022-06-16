@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./common.scss";
+@import "./animation.scss";
 
 /*Mobile*/
 
@@ -52,7 +53,8 @@
             padding: 20px;
 
             button {
-                @include btnGradient;
+                margin-top: 20px;
+                @include pinkButton;
                 @include boxShadow;
             }
         }
@@ -95,6 +97,8 @@
                     border-radius: 15px;
                     font-weight: bold;
                     @include boxShadow;
+                    @include functioningItem;
+
 
                     &:hover {
                         background: lighten($color: rgb(188, 199, 255), $amount: 10%);
@@ -131,6 +135,7 @@
                 border-radius: 16px;
                 margin-bottom: 5%;
                 @include boxShadow;
+                position: relative;
 
                 a {
                     text-decoration: none;

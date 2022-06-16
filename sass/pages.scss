@@ -1,6 +1,6 @@
 @import './variables.scss';
 @import "./common.scss";
-
+@import "./animation.scss";
 
 
 /*Mobile*/
@@ -65,24 +65,17 @@
                     padding: 10px;
                 }
 
+                div {
+                    font-size: 24px;
+                }
             }
 
             div.menu-items {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                opacity: 0;
-                animation: progressiv 1000ms 0.7s forwards;
-
-                @keyframes progressiv {
-                    from {
-                      opacity: 0;
-                    }
-            
-                    to {
-                      opacity: 1;
-                    }
-                  }
+                @include cascade-delay;
+                animation: fadeIn 0.5s both;
 
                 h3 {
                     width: 100%;
@@ -121,7 +114,7 @@
                 padding: 20px;
 
                 button {
-                    @include btnGradient;
+                    @include pinkButton;
                     @include boxShadow;
                 }
             }
@@ -253,7 +246,9 @@
 
                 button {
                     @include btnGradient;
+                    margin-top: 20px;
                     @include boxShadow;
+                    @include pinkButton;
                 }
             }
         }
