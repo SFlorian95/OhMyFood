@@ -168,6 +168,159 @@ footer section a i {
     font-size: 20px;
   }
 }
+/*Desktop*/
+@media screen and (min-width: 769px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav a.logo {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 3px rgb(206, 206, 206);
+  }
+  header nav a.logo img {
+    height: 40px;
+  }
+  header div.gps {
+    background-color: rgb(239, 239, 239);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+  }
+  header div.gps i {
+    margin-right: 10px;
+  }
+
+  main section.homepage {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  main section.homepage button {
+    background: linear-gradient(#9356DC, #FF79DA);
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 5px 5px 0px #cccaca;
+  }
+  main section.tuto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  main section.tuto h2 {
+    padding-left: 10px;
+  }
+  main section.tuto div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 5%;
+  }
+  main section.tuto div span.number {
+    background: #9356DC;
+    border-radius: 20px;
+    padding-top: 2px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    font-size: 13px;
+    color: white;
+    height: min-content;
+    z-index: 1;
+    margin-right: -10px;
+  }
+  main section.tuto div span.tuto-text {
+    display: block;
+    width: 50%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px 0px #cccaca;
+  }
+  main section.tuto div span.tuto-text:hover {
+    background: #eff2ff;
+  }
+  main section.tuto div span.tuto-text:hover i {
+    color: #9356DC;
+  }
+  main section.tuto div span.tuto-text i {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: gray;
+  }
+  main section.restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    margin-top: 20px;
+    padding-bottom: 100px;
+  }
+  main section.restaurant h2 {
+    width: 100%;
+    padding-left: 10px;
+  }
+  main section.restaurant div.card {
+    width: 45%;
+    background-color: white;
+    border-radius: 16px;
+    margin: 10px;
+    box-shadow: 0px 5px 5px 0px #cccaca;
+  }
+  main section.restaurant div.card a {
+    text-decoration: none;
+    color: black;
+  }
+  main section.restaurant div.card img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    max-height: 200px;
+  }
+  main section.restaurant div.card div.container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  main section.restaurant div.card div.container div.card-text {
+    display: flex;
+    flex-direction: column;
+  }
+  main section.restaurant div.card div.container div.card-text span.card-title {
+    font-weight: bold;
+  }
+  main section.restaurant div.card div.container div.like {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1052px) {
+  section.restaurant div.card {
+    width: 45%;
+  }
+}
 /*****Homepage*****/
 footer {
   display: flex;
@@ -192,6 +345,7 @@ footer section a i {
   margin-right: 10px;
 }
 
+/*Mobile*/
 @media screen and (max-width: 768px) {
   .nav-pages {
     display: flex;
@@ -242,6 +396,7 @@ footer section a i {
     font-family: "Shrikhand", cursive;
     font-size: 28px;
     font-weight: 100;
+    padding: 10px;
   }
   section.pages-container div.menu div.menu-items {
     display: flex;
@@ -296,6 +451,123 @@ footer section a i {
     color: white;
     padding: 10px;
     box-shadow: 0px 5px 5px 0px #cccaca;
+  }
+}
+/*Desktop*/
+@media screen and (min-width: 769px) {
+  .nav-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-pages a.return {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 40px;
+  }
+  .nav-pages a.return i {
+    font-size: 25px;
+  }
+
+  a.logo-pages {
+    padding: 15px;
+  }
+  a.logo-pages img {
+    width: 180px;
+  }
+
+  section.pages-container div.background-img {
+    width: 100%;
+  }
+  section.pages-container div.background-img img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 300px;
+  }
+  section.pages-container div.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    background: rgb(241, 241, 241);
+    padding-top: 20px;
+  }
+  section.pages-container div.menu div.menu-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 10px;
+    width: 100%;
+  }
+  section.pages-container div.menu div.menu-title h2 {
+    margin-top: unset;
+    font-family: "Shrikhand", cursive;
+    font-size: 28px;
+    font-weight: 100;
+  }
+  section.pages-container div.menu div.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: progressiv 1000ms 0.7s forwards;
+  }
+  @keyframes progressiv {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  section.pages-container div.menu div.menu-items h3 {
+    width: 100%;
+    padding-left: 10px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  section.pages-container div.menu div.menu-items div.menu-container {
+    background-color: white;
+    border-radius: 20px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 5px 5px 0px #cccaca;
+  }
+  section.pages-container div.menu div.menu-items div.menu-container span.menu-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  section.pages-container div.menu div.menu-items div.menu-container div {
+    display: flex;
+    justify-content: space-between;
+  }
+  section.pages-container div.menu div.menu-items div.menu-container div span.price {
+    padding-left: 2%;
+    font-weight: bold;
+  }
+  section.pages-container div.menu div.btn-command {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-self: center;
+    width: 100%;
+  }
+  section.pages-container div.menu div.btn-command button {
+    background: linear-gradient(#9356DC, #FF79DA);
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 5px 5px 0px #cccaca;
+  }
+}
+@media screen and (max-width: 1052px) {
+  div.menu-items {
+    width: 100%;
   }
 }
 footer {
