@@ -227,7 +227,7 @@
             padding: 20px;
     
             button {
-                @include btnGradient;
+                @include pinkButton;
                 @include boxShadow;
             }
         }
