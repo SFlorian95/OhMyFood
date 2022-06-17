@@ -5,118 +5,172 @@
 
 /*Mobile*/
 
-@media screen and (max-width: 768px) {
-    .nav-pages {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.nav-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        a.return {
-            text-decoration: none;
-            color: black;
-            position: absolute;
-            left: 40px;
-            
-            i {
-                font-size: 25px;
-            }
+    a.return {
+        text-decoration: none;
+        color: black;
+        position: absolute;
+        left: 40px;
+        
+        i {
+            font-size: 25px;
         }
     }
+}
 
-    a.logo-pages {
-        padding: 15px;
+a.logo-pages {
+    padding: 15px;
+
+    img {
+        width: 180px;
+    }
+}
+
+section.pages-container {
+
+    div.background-img {
+        width: 100%;
 
         img {
-            width: 180px;
+            object-fit: cover;
+            width: 100%;
+            max-height: 300px;
         }
     }
 
-    section.pages-container {
+    div.menu {
+        background: rgb(241, 241, 241);
+        border-top-right-radius: 35px;
+        border-top-left-radius: 35px;
+        margin-top: -32px;
+        position: relative;
+        padding-top: 20px;
 
-        div.background-img {
-            width: 100%;
+        div.menu-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding-left: 20px;
+            padding-right: 10%;
 
-            img {
-                object-fit: cover;
-                width: 100%;
-                max-height: 300px;
+            h2 {
+                margin-top: unset;
+                font-family: 'Shrikhand', cursive;
+                font-size: 28px;
+                font-weight: 100;
+                padding: 10px;
+            }
+
+            div {
+                font-size: 24px;
             }
         }
 
-        div.menu {
-            background: rgb(241, 241, 241);
-            border-top-right-radius: 35px;
-            border-top-left-radius: 35px;
-            margin-top: -32px;
-            position: relative;
-            padding-top: 20px;
+        div.menu-items {
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include cascade-delay;
+            animation: fadeIn 0.5s both;
 
-            div.menu-title {
-                display: flex;
-                justify-content: space-around;
-                align-items: baseline;
-                padding: 10px;
-
-                h2 {
-                    margin-top: unset;
-                    font-family: 'Shrikhand', cursive;
-                    font-size: 28px;
-                    font-weight: 100;
-                    padding: 10px;
-                }
-
-                div {
-                    font-size: 24px;
-                }
+            h3 {
+                width: 100%;
+                padding-left: 10px;
+                font-weight: lighter;
+                text-transform: uppercase;
             }
 
-            div.menu-items {
+            div.menu-container {
+                background-color: white;
+                border-radius: 20px;
+                width: 98%;
+                @include boxShadow;
+                overflow:hidden; 
+                white-space:nowrap; 
+                text-overflow: ellipsis;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                @include cascade-delay;
-                animation: fadeIn 0.5s both;
+                flex-direction: row;
+                align-items: stretch;
+                justify-content: space-between;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                cursor: pointer;
+                @include checkRotate;
 
-                h3 {
+                div {
+                    padding: 12px;
                     width: 100%;
-                    padding-left: 10px;
-                    font-weight: lighter;
-                    text-transform: uppercase;
-                }
-
-                div.menu-container {
-                    background-color: white;
-                    border-radius: 20px;
-                    width: 98%;
-                    padding: 20px;
-                    margin-bottom: 15px;
-                    @include boxShadow;
+                    transition-timing-function: linear;
+                    transition: flex 1s;
+                    flex: 1 0 100%;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+    
+                    &:hover {
+                        flex: unset;
+                    }
 
                     span.menu-subtitle {
                         font-size: 18px;
                         font-weight: bold;
+                        overflow:hidden; 
+                        white-space:nowrap; 
+                        text-overflow: ellipsis;
+                        margin: 2px;
                     }
 
                     div {
                         display: flex;
                         justify-content: space-between;
+                        flex: 100%;
+                        margin: 2px;
+                        padding: 0px;
+
+                        span:nth-child(1) {
+                            overflow:hidden; 
+                            white-space:nowrap; 
+                            text-overflow: ellipsis;
+                            flex: 1 0 77%;
+                        }
 
                         span.price {
                             font-weight: bold;
+                            flex: 2 0 10%;
+                            text-align: right;
+                            padding-right: 10px;
                         }
                     }
                 }
-            }
 
-            div.btn-command {
-                display: flex;
-                justify-content: center;
-                padding: 20px;
-
-                button {
-                    @include pinkButton;
-                    @include boxShadow;
+                .menu-check {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $grenLight;
+                    color: white;
+                    text-align: center;
+                    flex: 2 2 66px;
                 }
+
+            }
+        }
+
+        div.btn-command {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+
+            button {
+                width: 200px;
+                @include pinkButton;
+                @include boxShadow;
             }
         }
     }
@@ -126,137 +180,41 @@
 /*Desktop*/
 
 @media screen and(min-width: 769px) {
-    .nav-pages {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        a.return {
-            text-decoration: none;
-            color: black;
-            position: absolute;
-            left: 40px;
-            
-            i {
-                font-size: 25px;
-            }
-        }
-    }
-
-    a.logo-pages {
-        padding: 15px;
-
-        img {
-            width: 180px;
-        }
-    }
 
     section.pages-container {
-
-        div.background-img {
-            width: 100%;
-
-            img {
-                object-fit: cover;
-                width: 100%;
-                max-height: 300px;
-            }
-        }
 
         div.menu {
             display: flex;
             flex-wrap: wrap;
             align-items: baseline;
             justify-content: center;
-            background: rgb(241, 241, 241);
-            padding-top: 20px;
 
             div.menu-title {
-                display: flex;
-                justify-content: space-around;
-                align-items: baseline;
-                padding: 10px;
                 width: 100%;
-
-                h2 {
-                    margin-top: unset;
-                    font-family: 'Shrikhand', cursive;
-                    font-size: 28px;
-                    font-weight: 100;
-                }
-
             }
 
             div.menu-items {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                opacity: 0;
-                animation: progressiv 1000ms 0.7s forwards;
-
-                @keyframes progressiv {
-                    from {
-                      opacity: 0;
-                    }
-            
-                    to {
-                      opacity: 1;
-                    }
-                  }
-
                 h3 {
-                    width: 100%;
-                    padding-left: 10px;
-                    font-weight: lighter;
-                    text-transform: uppercase;
-                    text-align: center;
+                    padding-left: 10%;
+                }
+        
+                hr {
+                    margin-left: 10%;
                 }
 
-                div.menu-container {
-                    background-color: white;
-                    border-radius: 20px;
-                    width: 80%;
-                    padding: 20px;
-                    margin-bottom: 15px;
-                    @include boxShadow;
-
-                    span.menu-subtitle {
-                        font-size: 18px;
-                        font-weight: bold;
-                    }
-
-                    div {
-                        display: flex;
-                        justify-content: space-between;
-
-                        span.price {
-                            padding-left: 2%;
-                            font-weight: bold;
-                        }
-                    }
+                .menu-container {
+                    min-width: 410px;
                 }
             }
 
             div.btn-command {
-                display: flex;
-                justify-content: center;
-                padding: 20px;
                 align-self: center;
                 width: 100%;
 
                 button {
-                    @include btnGradient;
                     margin-top: 20px;
-                    @include boxShadow;
-                    @include pinkButton;
                 }
             }
         }
-    }
-}
-
-@media screen and(max-width:1052px) {
-    div.menu-items {
-        width: 100%;
     }
 }
