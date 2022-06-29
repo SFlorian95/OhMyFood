@@ -103,6 +103,16 @@ section.pages-container {
                 cursor: pointer;
                 @include checkRotate;
 
+                &:hover {
+                        div {
+                            flex: 1 1 80%;
+                        }
+
+                        .menu-check {
+                            flex: 1 1 20%;
+                        }
+                }
+
                 div {
                     padding: 12px;
                     width: 100%;
@@ -112,10 +122,6 @@ section.pages-container {
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
-    
-                    &:hover {
-                        flex: unset;
-                    }
 
                     span.menu-subtitle {
                         font-size: 18px;

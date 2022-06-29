@@ -438,6 +438,12 @@ section.pages-container div.menu div.menu-items div.menu-container {
 section.pages-container div.menu div.menu-items div.menu-container:hover .fas {
   animation: rotation 1s;
 }
+section.pages-container div.menu div.menu-items div.menu-container:hover div {
+  flex: 1 1 80%;
+}
+section.pages-container div.menu div.menu-items div.menu-container:hover .menu-check {
+  flex: 1 1 20%;
+}
 section.pages-container div.menu div.menu-items div.menu-container div {
   padding: 12px;
   width: 100%;
@@ -447,9 +453,6 @@ section.pages-container div.menu div.menu-items div.menu-container div {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-section.pages-container div.menu div.menu-items div.menu-container div:hover {
-  flex: unset;
 }
 section.pages-container div.menu div.menu-items div.menu-container div span.menu-subtitle {
   font-size: 18px;
